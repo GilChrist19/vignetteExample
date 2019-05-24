@@ -1,0 +1,25 @@
+---
+title: "example"
+output: pdf_document
+vignette: >
+  %\VignetteIndexEntry{example}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r}
+library(vignetteExample)
+
+# this is how to make an array with this minimal package
+anArray <- makeArray()
+
+# it looks like this
+print(anArray)
+```
